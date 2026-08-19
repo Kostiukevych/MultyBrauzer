@@ -34,10 +34,14 @@ android {
         viewBinding = false
     }
 
-    packagingOptions {
-        exclude("META-INF/proguard/androidx-*.pro")
-        exclude("META-INF/AL2.0")
-        exclude("META-INF/LGPL2.1")
+    packaging {
+        resources {
+            excludes += listOf(
+                "META-INF/proguard/androidx-*.pro",
+                "META-INF/AL2.0",
+                "META-INF/LGPL2.1"
+            )
+        }
     }
 }
 

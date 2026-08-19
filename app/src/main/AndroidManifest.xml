@@ -9,6 +9,7 @@
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:usesCleartextTraffic="false"
+        android:icon="@mipmap/ic_launcher"
         android:label="8 Mini Browsers"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 

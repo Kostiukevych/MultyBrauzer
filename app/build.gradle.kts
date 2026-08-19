@@ -33,6 +33,12 @@ android {
     buildFeatures {
         viewBinding = false
     }
+
+    packagingOptions {
+        exclude("META-INF/proguard/androidx-*.pro")
+        exclude("META-INF/AL2.0")
+        exclude("META-INF/LGPL2.1")
+    }
 }
 
 dependencies {
